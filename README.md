@@ -14,9 +14,12 @@ This is a version of Paul Falstad's circuit simulator (original available at <ht
 compiling and building
 ----------------------
 
-If you have make installed, just `cd` to the *src* directory and run `make`, followed by a `make jar`
+Just `cd` to the *src* directory and run `make`, followed by a `make jar`
 
-If not, compile with `javac *.java` and build the jar file with `jar cfm circuit.jar Manifest.txt *.class *.txt circuits/`
+You may need to change PLUGINJAR in the Makefile to point to plugin.jar on your system.
+In ubuntu 14.4, `apt-get install icedtea-7-plugin` gets you that file.
+
+If you do not have make, compile with `javac *.java` and build the jar file with `jar cfm circuit.jar Manifest.txt *.class *.txt circuits/`
 
 running
 -------
